@@ -1,0 +1,70 @@
+:root {
+  --mainColor: #95d2b3;
+  --secondaryColor: #d8efd3;
+  --primaryColor: #f1f8e8;
+  --textColor: #55ad9b;
+}
+.update {
+  background-color: #d8efd3bd;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  padding: 20px;
+  background-color: var(--textColor);
+}
+tr {
+  width: 75%;
+  padding: 20px;
+  border-radius: 5px;
+  border-bottom: none !important;
+
+  input {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid var(--secondaryColor);
+    padding: 5px;
+    margin-top: 15px;
+  }
+  button {
+    margin-block: 10px;
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    background-color: transparent;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+.close {
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin-inline-start: auto;
+  color: var(--primaryColor);
+  font-weight: bold;
+  font-size: 20px;
+}
+.add {
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: var(--textColor);
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px;
+  margin-block: 15px;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
+  }
+}

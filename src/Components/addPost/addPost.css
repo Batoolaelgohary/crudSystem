@@ -1,0 +1,37 @@
+:root {
+  --mainColor: #95d2b3;
+  --secondaryColor: #d8efd3;
+  --primaryColor: #f1f8e8;
+  --textColor: #55ad9b;
+}
+.addPost {
+  background-color: var(--textColor);
+  padding: 20px;
+  margin-block: 10px;
+  border-radius: 5px;
+  input {
+    padding: 5px;
+  }
+  .close-add {
+    border: none;
+    display: block;
+    margin-inline-start: auto;
+    width: fit-content;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .add {
+    margin-block: 5px;
+    background-color: transparent;
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    display: block;
+    margin-inline-start: auto;
+    border-radius: 5px;
+    padding: 5px;
+    &:hover {
+      color: var(--textColor);
+      background-color: var(--primaryColor);
+    }
+  }
+}

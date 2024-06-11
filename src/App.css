@@ -1,0 +1,86 @@
+:root{
+  --mainColor:#95D2B3;
+  --secondaryColor:#D8EFD3;
+  --primaryColor:#F1F8E8;
+  --textColor:#55AD9B;
+}
+.app{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: var(--mainColor);
+  font-family: "Alegreya", serif;
+}
+button{
+  transition: 1s background-color, 1s border, 1s color !important;
+}
+
+.display{
+  padding-block:50px ;
+  width: 80%;
+  margin: auto;
+  .srh{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .search{
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid var(--secondaryColor);
+      padding: 5px;
+      margin-bottom: 10px;
+      outline: none;
+      color: var(--textColor);
+    }
+    button{
+      background-color: transparent;
+      border: none;
+    }
+
+  }
+  table{
+    border-radius: 5px;
+    background-color: var(--secondaryColor);
+    thead{
+      color:var(--textColor);
+      border-bottom: 1px solid var(--mainColor);
+
+    }
+    tbody{
+      tr{
+        border-bottom: 1px solid var(--primaryColor);
+        .main-btn{
+          button{
+
+            margin: auto;
+            margin-block: 10px;
+            width: 50%;
+          }
+        }
+      }
+      .id{
+        font-weight: bold;
+        font-size: 18px;
+        color: var(--textColor);
+      }
+    }
+  }
+  .open{
+  width: 100%;
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin-block: 15px;
+  
+    &:hover {
+      background-color: transparent;
+      color: var(--secondaryColor);
+      border: 1px solid var(--secondaryColor);
+    }
+  }
+}

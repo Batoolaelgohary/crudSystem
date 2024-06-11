@@ -1,0 +1,50 @@
+.form {
+  background-color: #d8efd3bd;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .add-form {
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--textColor);
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid var(--secondaryColor);
+      padding: 5px;
+      margin-top: 15px;
+    }
+
+    .add {
+      width: 100%;
+      background-color: var(--secondaryColor);
+      color: var(--textColor);
+      font-weight: bold;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 5px;
+      margin-block: 15px;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--secondaryColor);
+        border: 1px solid var(--secondaryColor);
+      }
+    }
+
+    .close {
+      border: none;
+      background-color: transparent;
+      margin-inline-start: auto;
+      display: block;
+    }
+  }
+}
