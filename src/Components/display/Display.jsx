@@ -57,6 +57,7 @@ const Display = () => {
       if (items.name.toLowerCase() === searchTerm.toLowerCase()) {
         return items;
       }
+      return true;
     });
     if (newList.length !== 0) {
       setLists(newList);
